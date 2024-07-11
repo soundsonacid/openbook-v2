@@ -30,8 +30,8 @@ use error::*;
 use state::{OracleConfigParams, Order, OrderParams, PlaceOrderType, SelfTradeBehavior, Side};
 use std::cmp;
 
-#[cfg(all(not(feature = "no-entrypoint"), not(feature = "enable-gpl")))]
-compile_error!("compiling the program entrypoint without 'enable-gpl' makes no sense, enable it or use the 'cpi' or 'client' features");
+// #[cfg(all(not(feature = "no-entrypoint"), not(feature = "enable-gpl")))]
+// compile_error!("compiling the program entrypoint without 'enable-gpl' makes no sense, enable it or use the 'cpi' or 'client' features");
 
 #[program]
 pub mod openbook_v2 {
